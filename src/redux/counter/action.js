@@ -12,8 +12,9 @@ export const decrement =()=>{
     }
 }
 
-export const multiplication = ()=>{
+export const multiplication = (num)=>{
     return{
-        type:MULTIPLICATION
+        type:MULTIPLICATION,
+        payload:num
     }
 }

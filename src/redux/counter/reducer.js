@@ -21,7 +21,7 @@ const counter =(state=initialState,action)=>{
         case MULTIPLICATION:
             return{
                 ...state,
-                result2:state.result2*2
+                result2:state.result2*action.payload
             }    
 
         default:
