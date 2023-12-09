@@ -1,4 +1,4 @@
-import { ADDITION,SUBTRACTION } from "./type";
+import { ADDITION,MULTIPLICATION,SUBTRACTION } from "./type";
 
 export const increment = ()=>{
     return{
@@ -9,5 +9,11 @@ export const increment = ()=>{
 export const decrement =()=>{
     return{
         type:SUBTRACTION
+    }
+}
+
+export const multiplication = ()=>{
+    return{
+        type:MULTIPLICATION
     }
 }
