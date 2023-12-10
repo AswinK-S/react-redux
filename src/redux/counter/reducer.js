@@ -1,4 +1,4 @@
-import { SUBTRACTION,ADDITION, MULTIPLICATION } from "./type";
+import { SUBTRACTION,ADDITION, MULTIPLICATION, DIVISION } from "./type";
 
 const initialState = {
     result:0,
@@ -22,6 +22,11 @@ const counter =(state=initialState,action)=>{
             return{
                 ...state,
                 result2:state.result2*action.payload
+            }    
+        case DIVISION:
+            return{
+                ...state,
+                result2:state.result2/2
             }    
 
         default:

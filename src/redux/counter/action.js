@@ -1,4 +1,4 @@
-import { ADDITION,MULTIPLICATION,SUBTRACTION } from "./type";
+import { ADDITION,DIVISION,MULTIPLICATION,SUBTRACTION } from "./type";
 
 export const increment = ()=>{
     return{
@@ -18,3 +18,10 @@ export const multiplication = (num)=>{
         payload:num
     }
 }
+
+export const division =()=>{
+    return{
+        type:DIVISION
+    }
+}
+
